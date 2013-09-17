@@ -5,8 +5,10 @@ gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-gem 'pg'
-gem 'rails_12factor'
+*group :production, :staging do
+      gem 'pg'
+      gem 'rails_12factor'
+    end*
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass'

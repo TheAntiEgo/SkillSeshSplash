@@ -15,3 +15,4 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+$.backstretch("/img/skillback.jpg");
