@@ -1,25 +1,25 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
-gem 'jquery-rails'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.0.0'
+
+# Use sqlite3 as the database for Active Record
+#gem 'sqlite3'
+gem 'pg'
+gem 'rails_12factor'
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
+gem 'bootstrap-sass'
 gem 'devise'
-gem 'simple_form'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
 
-group :production do
-	gem 'pg'
-end
-group :development, :test do
-  gem 'sqlite3'
-end
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'bootstrap-sass', '~> 2.3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-end
+gem 'coffee-rails', '~> 4.0.0'
+gem 'simple_form', '>= 3.0.0.rc'
+
+gem 'jquery-rails'
+
 
 gem 'turbolinks'
 
