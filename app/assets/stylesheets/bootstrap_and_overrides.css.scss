@@ -7,3 +7,10 @@ body { padding-top: 15px; }
 body { 
     background: asset-url('texturecream.png') repeat 0 0;
 }
+body { padding-top: 40px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}
+.navbar .nav > li > a {
+    color: #40b9e5;
+  }
