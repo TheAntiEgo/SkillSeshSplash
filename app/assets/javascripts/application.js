@@ -15,4 +15,8 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
-$.backstretch("/img/skillback.jpg");
+('.accordion-toggle').on('click',function(e){
+    if($(this).parents('.accordion-group').children('.accordion-body').hasClass('in')){
+        e.stopPropagation();
+    }
+});
