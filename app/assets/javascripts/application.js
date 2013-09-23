@@ -15,7 +15,7 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
-('.accordion-toggle').on('click',function(e){
+$('.accordion-toggle').on('click',function(e){
     if($(this).parents('.accordion-group').children('.accordion-body').hasClass('in')){
         e.stopPropagation();
     }
